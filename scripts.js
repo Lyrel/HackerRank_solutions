@@ -11,7 +11,9 @@
 
 
 function ArmyGame(m, n){
-
+//if the side is odd, make it even. The solution is based on the following:
+// for example m = 3, n = 3 There will be spots of 4 bases, 2, 2, 1 therefore totally 4 dots are needed.
+// same result if we extend sides by one and simply divide by 4. m = 3+1, n = 3+1. 
 let rows = n + n % 2;
 let columns = m + m % 2;
 
